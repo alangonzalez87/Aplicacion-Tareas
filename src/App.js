@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+/* eslint-disable jsx-a11y/alt-text */
+
 import './App.css';
+import ListaDeTareas from './componentes/ListaDeTareas';
+import appLogo from './imagenes/app tareas.png'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='aplicacion-tareas'>
+      <div className='logo-contenedor'>
+        <img 
+        src={appLogo}
+        className='logo' />
+      </div>
+      <div className='tareas-lista-principal'>
+          <h1>
+            Mis tareas
+          </h1>
+          <ListaDeTareas/>
+      </div>
     </div>
   );
 }
